@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/Burgershack:latest
+    restart: unless-stopped
+    env_file:
+      - Burgershack-env
+    ports:
+      - "3000:3000"
